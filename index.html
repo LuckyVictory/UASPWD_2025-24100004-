@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GuruLes.id</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>GuruLes.id</h1>
+    <p>Temukan guru terbaik untuk masa depanmu</p>
+  </header>
+
+  <section id="about">
+    <h2>Tentang Kami</h2>
+    <p>GuruLes.id adalah platform yang menghubungkan siswa dengan guru privat berkualitas. Anda dapat memilih guru berdasarkan bidang, lokasi, dan metode belajar (offline/online).</p>
+  </section>
+
+  <section id="tutors">
+    <h2>Daftar Guru</h2>
+    <div class="tutor-list">
+      <div class="tutor-card" data-name="Bapak Lim Hak Meng - Matematika">
+        <img src="asset/ronaldo.jpeg" alt="Guru Lim Hak Meng" />
+        <h3>Bapak Lim Hak Meng</h3>
+        <p>Matematika | Kubu Raya | Offline</p>
+        <button class="select-tutor">Hubungi Guru Ini</button>
+      </div>
+
+      <div class="tutor-card" data-name="Ibu Nabiel - Bahasa Inggris">
+        <img src="asset/ronaldowati.jpeg" alt="Guru Nabiel" />
+        <h3>Ibu Nabiel</h3>
+        <p>Bahasa Inggris | Pontianak | Online</p>
+        <button class="select-tutor">Hubungi Guru Ini</button>
+      </div>
+
+      <div class="tutor-card" data-name="Kak Sean - Coding">
+        <img src="asset/timothy.jpeg" alt="Guru Sean" />
+        <h3>Kak Sean</h3>
+        <p>Coding Dasar | Kumpai | Online</p>
+        <button class="select-tutor">Hubungi Guru Ini</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Hubungi Kami</h2>
+    <form id="contactForm">
+      <input type="text" name="student_name" placeholder="Nama Anda" required />
+      <input type="email" name="email" placeholder="Email Anda" required />
+      <input type="text" name="tutor_name" id="tutorInput" placeholder="Nama Guru yang Diinginkan" required />
+      <textarea name="message" placeholder="Pesan Anda (jadwal, kebutuhan, dll)"></textarea>
+      <button type="submit">Kirim Permintaan</button>
+    </form>
+    <p id="responseMsg"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 GuruLes.id</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
